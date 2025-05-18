@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAINANDOU</title>
+    <link rel="shortcut icon" href="img/bird-dancing.gif" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f13a820d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <img src="img/fons.png" id="imatgeFixada" alt="arbre lila">
+
+    <div id="content" style="z-index: 100;">
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <button onclick="canviarInici();" class="nav-link">
+                        <h1>XAINANDOU</h1>
+                    </button>
+
+                    <ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-end mb-md-0 me-5">
+                        <li><button id="li_jocs_de_la_pau" onclick="canviarJocsdelaPau();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-trophy"></i> Jocs de la Pau</button></li>
+                        <li><button id="li_arbre" onclick="canviarArbre();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-tree"></i> L'arbre</button></li>
+                        <li><button id="li_memory" onclick="canviarMemory();" class="nav-link px-2 text-secondary"><i class="fa-solid fa-brain"></i> Joc de Memòria</button></li>
+                    </ul>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <span>Contacta amb nosaltres</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Servei de missatgeria spondoforoïl <i
+                                class="fa-solid fa-feather"></i></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-align-justify">
+                            Hem avisat al nostre servei de spondoforois missatgers. En 10 dies laborables n'arribarà una
+                            perquè li puguis donar el missatge. La resposta arribarà en 20 dies laborables. El servei es pot
+                            veure alterat per arbres caiguts en la ὁδός  <i class="fa-solid fa-tree"></i>
+                        </p>
+                        <p>
+                            Si ho prefereixes ens pots contactar a través de gsm@grupsardanistamontserrat.cat :))
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tancar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="unknownModal" tabindex="-1" aria-labelledby="unknownModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="unknownModalLabel">Pròximament... <i class="fa-solid fa-exclamation"></i></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-align-justify">
+                            Hi estem treballant! En el futur et sorprendrem <i class="fa-regular fa-face-surprise"></i>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tancar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="video-container">
+            <video id="intro-video" controls>
+                <source src="img/prova.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>-->
+
+        <div class="container mt-4 p-5" id="pagina_inici">
+
+            <iframe width="100%" height="400" src="img/prova.mp4" 
+                class = "mb-5"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+        
+
+            <p>
+                Imagina un lloc on els rius flueixen amb màgia, les muntanyes amaguen secrets mil·lenaris i un arbre ancestral té el poder de concedir un desig. Aquest arbre, al cor de Xainandou, és la clau del nostre futur. Però aquest desig no es lliura a tothom... només aquells que aconsegueixin guanyar els Jocs de la Pau.
+            </p>
+            <p>
+                Xainandou no és només un territori; és un indret on diferents faccions viuen i lluiten amb un objectiu comú: demostrar qui és capaç de dirigir i portar Xainandou a un futur millor. Les faccions de Xainandou no són només grups, són comunitats amb identitats úniques, valors i habilitats que les fan fortes. Cada facció té el seu propi símbol, les seves característiques especials i un propòsit clar en els jocs. Però, a la vegada, totes comparteixen una mateixa aspiració: guanyar el desig per poder millorar Xainandou.
+            </p>
+            <p>
+                Els Jocs de la Pau no són només una competició física, són una demostració de valentia, astúcia i unitat. Cada facció haurà de demostrar la seva força, la seva creativitat i la seva capacitat per treballar en equip. Els jocs no són només una prova per guanyar, sinó una oportunitat per a cada membre de mostrar el que realment importa: el que poden aconseguir junts, com a comunitat, per a Xainandou.
+            </p>
+            <p>
+                Cada facció té una història, un símbol i un propòsit, i la seva participació als Jocs de la Pau determinarà qui tindrà el poder de realitzar el desig concedit per l’arbre durant els següents quatre anys. Les faccions que competeixen són:
+            </p>
+
+            <div class="overflow-auto mt-5">
+
+                <div class="d-flex flex-wrap justify-content-center align-items-center">
+
+                    <div class="card mb-3 mx-2" style="width: 18rem;" onclick="canviarBlau();">
+                        <img src="img/blau.jpeg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card mb-3 mx-2" style="width: 18rem;" onclick="canviarGroc();">
+                        <img src="img/groc.jpeg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card mb-3 mx-2" style="width: 18rem;" onclick="canviarVermell();">
+                        <img src="img/vermell.jpeg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card mb-3 mx-2" style="width: 18rem;" onclick="canviarVerd();">
+                        <img src="img/verd.jpeg" class="card-img-top" alt="...">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container mt-4 p-5 d-none" id="pagina_blau">
+            <div class="row">
+                <p>
+                    La gloriosa facció WALDETA té com a cap la Pombeta Waldeta.
+                </p>
+                <div class="card mb-3 mx-2" style="width: 18rem;" >
+                    <img src="img/pombeta.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container mt-4 p-5 d-none" id="pagina_groc">
+            <div class="row">
+                <p>
+                    La gloriosa facció GEGANTÍSIMA té com a cap la Pombeta Gegantíssima.
+                </p>
+                <div class="card mb-3 mx-2" style="width: 18rem;" >
+                    <img src="img/martini.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4 p-5 d-none" id="pagina_verd">
+            <div class="row">
+                <p>
+                    La gloriosa facció SARDANISTA té com a cap la Pombeta Sardanista.
+                </p>
+                <div class="card mb-3 mx-2" style="width: 18rem;" >
+                    <img src="img/ramon.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-4 p-5 d-none" id="pagina_vermell">
+            <div class="row">
+                <p>
+                    La gloriosa facció XAINANDOU té com a cap la Pombeta Xainandou.
+                </p>
+                <div class="card mb-3 mx-2" style="width: 18rem;" >
+                    <img src="img/nana.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-4 p-5 d-none text-center" id="pagina_memory">
+            <h2>Joc de Memòria</h2>
+            <div id="memory-game" class="row row-cols-4 g-3 justify-content-center"></div>
+            <p id="memory-status" class="mt-3"></p>
+            <button class="btn btn-primary mt-3" onclick="reiniciarMemory()">Reinicia</button>
+        </div>
+
+        
+        
+        <div class="container mt-2 p-5 d-none text-center" id="pagina_tresor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rvcBCLviaDo?si=uM78eKramvkYdx8_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
