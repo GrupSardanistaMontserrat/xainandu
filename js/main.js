@@ -300,7 +300,6 @@ function canviarArbre()
 
 
 
-
 // JOC MEMORY
 function canviarMemory() {
     let inici = document.getElementById("pagina_inici");
@@ -433,7 +432,13 @@ function girarCarta(carta) {
 }
 
 
-
 function reiniciarMemory() {
     iniciarMemory();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});

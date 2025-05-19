@@ -25,7 +25,7 @@
                         <h1>XAINANDOU</h1>
                     </button>
 
-                    <ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-end mb-md-0 me-5">
+                    <ul id="menu" class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-end mb-md-0 me-5">
                         <li><button id="li_jocs" onclick="canviarJocsdelaPau();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-trophy"></i> Jocs de la Pau</button></li>
                         <li><button id="li_arbre" onclick="canviarArbre();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-tree"></i> L'arbre</button></li>
                         <li><button id="li_memory" onclick="canviarMemory();" class="nav-link px-2 text-secondary"><i class="fa-solid fa-brain"></i> Joc de Memòria</button></li>
@@ -85,29 +85,11 @@
             </div>
         </div>
 
-        <div class="container mt-4 p-5" id="pagina_inici">
+        <div class="container p-5" id="pagina_inici">
 
-            <video width="100%" height="400" controls class="mb-5">
-                <source src="img/prova.mp4" type="video/mp4">
-                El teu navegador no suporta el vídeo.
-            </video>
+            <div class="overflow-auto">
 
-            <p>
-                Imagina un lloc on els rius flueixen amb màgia, les muntanyes amaguen secrets mil·lenaris i un arbre ancestral té el poder de concedir un desig. Aquest arbre, al cor de Xainandou, és la clau del nostre futur. Però aquest desig no es lliura a tothom... només aquells que aconsegueixin guanyar els Jocs de la Pau.
-            </p>
-            <p>
-                Xainandou no és només un territori; és un indret on diferents faccions viuen i lluiten amb un objectiu comú: demostrar qui és capaç de dirigir i portar Xainandou a un futur millor. Les faccions de Xainandou no són només grups, són comunitats amb identitats úniques, valors i habilitats que les fan fortes. Cada facció té el seu propi símbol, les seves característiques especials i un propòsit clar en els jocs. Però, a la vegada, totes comparteixen una mateixa aspiració: guanyar el desig per poder millorar Xainandou.
-            </p>
-            <p>
-                Els Jocs de la Pau no són només una competició física, són una demostració de valentia, astúcia i unitat. Cada facció haurà de demostrar la seva força, la seva creativitat i la seva capacitat per treballar en equip. Els jocs no són només una prova per guanyar, sinó una oportunitat per a cada membre de mostrar el que realment importa: el que poden aconseguir junts, com a comunitat, per a Xainandou.
-            </p>
-            <p>
-                Cada facció té una història, un símbol i un propòsit, i la seva participació als Jocs de la Pau determinarà qui tindrà el poder de realitzar el desig concedit per l’arbre durant els següents quatre anys. Les faccions que competeixen són:
-            </p>
-
-            <div class="overflow-auto mt-5">
-
-                <div class="d-flex flex-wrap justify-content-center align-items-center">
+                <div class="d-flex flex-wrap justify-content-center align-items-center mb-3">
 
                     <div class="card mb-3 mx-2" style="width: 18rem;" onclick="canviarBlau();">
                         <img src="img/blau.jpeg" class="card-img-top" alt="...">
@@ -127,52 +109,204 @@
 
                 </div>
             </div>
+
+            <video width="100%" height="400" controls class="mb-5">
+                <source src="img/prova.mp4" type="video/mp4">
+                El teu navegador no suporta el vídeo.
+            </video>
+
+            <p>
+                Imagina un lloc on els rius flueixen amb màgia, les muntanyes amaguen secrets mil·lenaris i un arbre ancestral té el poder de concedir un desig. Aquest arbre, al cor de Xainandou, és la clau del nostre futur. Però aquest desig no es lliura a tothom... només aquells que aconsegueixin guanyar els Jocs de la Pau.
+            </p>
+            <p>
+                Xainandou no és només un territori; és un indret on diferents faccions viuen i lluiten amb un objectiu comú: demostrar qui és capaç de dirigir i portar Xainandou a un futur millor. Les faccions de Xainandou no són només grups, són comunitats amb identitats úniques, valors i habilitats que les fan fortes. Cada facció té el seu propi símbol, les seves característiques especials i un propòsit clar en els jocs. Però, a la vegada, totes comparteixen una mateixa aspiració: guanyar el desig per poder millorar Xainandou.
+            </p>
+            <p>
+                Els Jocs de la Pau no són només una competició física, són una demostració de valentia, astúcia i unitat. Cada facció haurà de demostrar la seva força, la seva creativitat i la seva capacitat per treballar en equip. Els jocs no són només una prova per guanyar, sinó una oportunitat per a cada membre de mostrar el que realment importa: el que poden aconseguir junts, com a comunitat, per a Xainandou.
+            </p>
+            <p>
+                Cada facció té una història, un símbol i un propòsit, i la seva participació als Jocs de la Pau determinarà qui tindrà el poder de realitzar el desig concedit per l’arbre durant els següents quatre anys. Les faccions que competeixen són:
+            </p>
+
         </div>
         
 
+        <!-- WALDETA (BLAU) -->
         <div class="container mt-4 p-5 d-none" id="pagina_blau">
-            <div class="row">
-                <p>
-                    La gloriosa facció WALDETA té com a cap la Pombeta Waldeta.
-                </p>
-                <div class="card mb-3 mx-2" style="width: 18rem;" >
-                    <img src="img/pombeta.png" class="card-img-top" alt="...">
+            <div class="row justify-content-center text-center">
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-primary fw-bold">WALDETA</h2>
+                        <p class="fst-italic text-center">💧 "La creativitat és la nostra força!"</p>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-warning btn-sm me-1" onclick="canviarGroc()">⚡</button>
+                        <button class="btn btn-outline-success btn-sm me-1" onclick="canviarVerd()">🪶</button>
+                        <button class="btn btn-outline-danger btn-sm" onclick="canviarVermell()">🧯</button>
+                    </div>
                 </div>
             </div>
-
+        
+            <div class="row mt-4 g-3">
+                <!-- Imatge cap de facció -->
+                <div class="col-12 col-md-4 text-center justify-content-center mb-3">
+                    <div class="card mx-auto" style="max-width: 18rem; width: 100%;">
+                        <img src="img/pombeta.png" class="card-img-top" alt="Cap de facció Waldeta" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p class="mt-2 text-center"><strong>Pombeta Waldeta</strong>, cap de la facció</p>
+                </div>
+        
+                <!-- Text explicatiu -->
+                <div class="col-12 col-md-8">
+                    <p>
+                        Les de la facció <strong>Waldeta</strong> són persones creatives, curioses i amb moltes idees. Sempre troben solucions enginyoses i saben treballar en equip. Els encanta imaginar, construir i ajudar amb el cap i el cor.
+                    </p>
+                    <h5 class="text-decoration-underline mt-4">🤔 Com són a la facció Waldeta?</h5>
+                    <ul class="text-start">
+                        <li>👕 Vesteixen de <strong> color blau, tipus els 80</strong></li>
+                        <li>⚡ Sempre duen <strong>aigua</strong></li>
+                        <li>💡 Habilitat: <strong>fun facts</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
+        
+        
 
+        <!-- MACQUINNI (GROC) -->
         <div class="container mt-4 p-5 d-none" id="pagina_groc">
-            <div class="row">
-                <p>
-                    La gloriosa facció MACQUINNI té com a cap la Martini Macquinni.
-                </p>
-                <div class="card mb-3 mx-2" style="width: 18rem;" >
-                    <img src="img/martini.png" class="card-img-top" alt="...">
+            <div class="row justify-content-center text-center">
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-warning fw-bold">MACQUINNI</h2>
+                        <p class="fst-italic text-center">⚡ "Energia i força, sempre endavant!</p>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-primary btn-sm me-1" onclick="canviarBlau()">💧</button>
+                        <button class="btn btn-outline-success btn-sm me-1" onclick="canviarVerd()">🪶</button>
+                        <button class="btn btn-outline-danger btn-sm" onclick="canviarVermell()">🧯</button>
+                    </div>
                 </div>
             </div>
+        
+            <div class="row mt-4 g-3">
+                <!-- Imatge cap de facció -->
+                <div class="col-md-4 text-center justify-content-center mb-3">
+                    <div class="card mx-auto" style="max-width: 18rem; width: 100%;">
+                        <img src="img/martini.png" class="card-img-top" alt="Cap de facció Macquinni" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p class="mt-2 text-center"><strong>Martini Macquinni</strong>, cap de la facció</p>
+                </div>
+        
+                <!-- Text explicatiu -->
+                <div class="col-md-8">
+                    <p>
+                        Les de la facció <strong>Macquinni</strong> són persones pràctiques, responsables i amb una gran capacitat d’organització. Els agrada tenir tot sota control i assegurar-se que tot funcioni a la perfecció. Són treballadors i metòdics.
+                    </p>
+                    <h5 class="text-decoration-underline mt-4">🛠️ Com són a la facció Macquinni:</h5>
+                    <ul class="text-start">
+                        <li>👕 Vesteixen amb <strong>ratlles grogues</strong></li>
+                        <li>⚡ Sempre duen un <strong>llamp</strong></li>
+                        <li>😈 Habilitat: <strong>energia i dolenteria</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
 
+        <!-- NYATEMON (VERD) -->
         <div class="container mt-4 p-5 d-none" id="pagina_verd">
-            <div class="row">
-                <p>
-                    La gloriosa facció NYATEMON té com a cap la Ramon Nyatemon.
-                </p>
-                <div class="card mb-3 mx-2" style="width: 18rem;" >
-                    <img src="img/ramon.png" class="card-img-top" alt="...">
+            <div class="row justify-content-center text-center">
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-success fw-bold">NYATEMON</h2>
+                        <p class="fst-italic text-center">🪶 "L'art és la nostra veu i la llibertat la nostra guia"</p>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-primary btn-sm me-1" onclick="canviarBlau()">💧</button>
+                        <button class="btn btn-outline-warning btn-sm me-1" onclick="canviarGroc()">⚡</button>
+                        <button class="btn btn-outline-danger btn-sm" onclick="canviarVermell()">🧯</button>
+                    </div>
                 </div>
             </div>
+        
+            <div class="row mt-4 g-3">
+                <!-- Imatge cap de facció -->
+                <div class="col-md-4 text-center justify-content-center mb-3">
+                    <div class="card mx-auto" style="max-width: 18rem; width: 100%;">
+                        <img src="img/ramon.png" class="card-img-top" alt="Cap de facció Nyatemon" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p class="mt-2 text-center"><strong>Ramon Nyatemon</strong>, cap de la facció</p>
+                </div>
+        
+                <!-- Text explicatiu -->
+                <div class="col-md-8">
+                    <p>
+                        Les de la facció <strong>Nyatemon</strong> són creatius, espontanis i amb un esperit lliure. Els encanta innovar i expressar-se de maneres originals, sempre aportant alegria i frescor. Són dinàmics i molt oberts.
+                    </p>
+                    <h5 class="text-decoration-underline mt-4">🤔 Com són a la facció Nyatemon?</h5>
+                    <ul class="text-start">
+                        <li>👕 Vesteixen de <strong> color verd i amb plomes</strong></li>
+                        <li>🪶 Sempre duen <strong>plomes</strong></li>
+                        <li>🎨 Habilitat: <strong>arts</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
 
+        <!-- BUTANA (VERMELL) -->
         <div class="container mt-4 p-5 d-none" id="pagina_vermell">
-            <div class="row">
-                <p>
-                    La gloriosa facció BUTANA té com a cap la Nana Butana.
-                </p>
-                <div class="card mb-3 mx-2" style="width: 18rem;" >
-                    <img src="img/nana.png" class="card-img-top" alt="...">
+            <div class="row justify-content-center text-center">
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-danger fw-bold">BUTANA</h2>
+                        <p class="fst-italic text-center">🔥 "Amb foc i cor, alimentem a tothom"</p>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-primary btn-sm me-1" onclick="canviarBlau()">💧</button>
+                        <button class="btn btn-outline-warning btn-sm me-1" onclick="canviarGroc()">⚡</button>
+                        <button class="btn btn-outline-success btn-sm me-1" onclick="canviarVerd()">🪶</button>
+                    </div>
                 </div>
             </div>
+        
+            <div class="row mt-4 g-3">
+                <!-- Imatge cap de facció -->
+                <div class="col-md-4 text-center justify-content-center mb-3">
+                    <div class="card mx-auto" style="max-width: 18rem; width: 100%;">
+                        <img src="img/nana.png" class="card-img-top" alt="Cap de facció Butana" style="max-width: 100%; height: auto;">
+                    </div>
+                    <p class="mt-2 text-center"><strong>Nana Butana</strong>, cap de la facció</p>
+                </div>
+        
+                <!-- Text explicatiu -->
+                <div class="col-md-8">
+                    <p>
+                        Les de la facció <strong>Butana</strong> són valents, decidits i amb un fort sentit de la justícia. Sempre actuen amb coratge i no tenen por de defensar els seus ideals. Són apassionats i protectors.
+                    </p>
+                    <h5 class="text-decoration-underline mt-4">🤔 Com són a la facció Butana?</h5>
+                    <ul class="text-start">
+                        <li>👕 Vesteixen amb <strong>capa vermella, cuir negre i guants de ciclista</strong></li>
+                        <li>🧯 Sempre duen <strong>extintor</strong></li>
+                        <li>🍳 Habilitat: <strong>cuina</strong></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
 
         <div class="container mt-4 p-5 d-none" id="pagina_jocs_de_la_pau">
@@ -195,7 +329,7 @@
 
 
         <div class="container mt-4 p-5 d-none text-center" id="pagina_memory">
-            <h2>Joc de Memòria</h2>
+            <h2 data-bs-toggle="tooltip" title="Venir a la recollida el 29 de juny!!!">Joc de Memòria</h2>
             <div id="memory-game" class="row row-cols-4 g-3 justify-content-center"></div>
             <p id="memory-status" class="mt-3"></p>
             <button class="btn btn-primary mt-3" onclick="reiniciarMemory()">Reinicia</button>
