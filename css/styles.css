@@ -13,10 +13,22 @@ body, html {
     text-align: center;
 }
 
-#imatgeFixada {
+#imatgeArbre {
     position: fixed;
+    top:0;
     left: 0;
     z-index: 0; /* molt alt per estar per sobre de tot */
+    width: 100%;   /* ajusta la mida com vulguis */
+    height: auto;
+    pointer-events: none; /* opcional: permet fer clics als elements sota la imatge */
+}
+
+#imatgeColumnes {
+    position: fixed;
+    top: 90px !important;
+    left: 0;
+    z-index: 0; /* molt alt per estar per sobre de tot */
+    height: 90% !important;
     width: 100%;   /* ajusta la mida com vulguis */
     height: auto;
     pointer-events: none; /* opcional: permet fer clics als elements sota la imatge */

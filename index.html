@@ -17,8 +17,6 @@
 
 <body>
 
-    <img src="img/fons.png" id="imatgeFixada" alt="arbre lila">
-
     <div id="content" style="z-index: 100;">
         <header class="p-3 text-bg-dark">
             <div class="container">
@@ -28,7 +26,7 @@
                     </button>
 
                     <ul class="nav col-12 col-lg-auto ms-lg-auto mb-2 justify-content-end mb-md-0 me-5">
-                        <li><button id="li_jocs_de_la_pau" onclick="canviarJocsdelaPau();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-trophy"></i> Jocs de la Pau</button></li>
+                        <li><button id="li_jocs" onclick="canviarJocsdelaPau();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-trophy"></i> Jocs de la Pau</button></li>
                         <li><button id="li_arbre" onclick="canviarArbre();" class="nav-link px-2 text-secondary me-4"><i class="fa-solid fa-tree"></i> L'arbre</button></li>
                         <li><button id="li_memory" onclick="canviarMemory();" class="nav-link px-2 text-secondary"><i class="fa-solid fa-brain"></i> Joc de Memòria</button></li>
                     </ul>
@@ -87,21 +85,12 @@
             </div>
         </div>
 
-        <!--<div id="video-container">
-            <video id="intro-video" controls>
-                <source src="img/prova.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>-->
-
         <div class="container mt-4 p-5" id="pagina_inici">
 
-            <iframe width="100%" height="400" src="img/prova.mp4" 
-                class = "mb-5"
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
-        
+            <video width="100%" height="400" controls class="mb-5">
+                <source src="img/prova.mp4" type="video/mp4">
+                El teu navegador no suporta el vídeo.
+            </video>
 
             <p>
                 Imagina un lloc on els rius flueixen amb màgia, les muntanyes amaguen secrets mil·lenaris i un arbre ancestral té el poder de concedir un desig. Aquest arbre, al cor de Xainandou, és la clau del nostre futur. Però aquest desig no es lliura a tothom... només aquells que aconsegueixin guanyar els Jocs de la Pau.
@@ -156,7 +145,7 @@
         <div class="container mt-4 p-5 d-none" id="pagina_groc">
             <div class="row">
                 <p>
-                    La gloriosa facció GEGANTÍSIMA té com a cap la Pombeta Gegantíssima.
+                    La gloriosa facció MACQUINNI té com a cap la Martini Macquinni.
                 </p>
                 <div class="card mb-3 mx-2" style="width: 18rem;" >
                     <img src="img/martini.png" class="card-img-top" alt="...">
@@ -167,7 +156,7 @@
         <div class="container mt-4 p-5 d-none" id="pagina_verd">
             <div class="row">
                 <p>
-                    La gloriosa facció SARDANISTA té com a cap la Pombeta Sardanista.
+                    La gloriosa facció NYATEMON té com a cap la Ramon Nyatemon.
                 </p>
                 <div class="card mb-3 mx-2" style="width: 18rem;" >
                     <img src="img/ramon.png" class="card-img-top" alt="...">
@@ -178,7 +167,7 @@
         <div class="container mt-4 p-5 d-none" id="pagina_vermell">
             <div class="row">
                 <p>
-                    La gloriosa facció XAINANDOU té com a cap la Pombeta Xainandou.
+                    La gloriosa facció BUTANA té com a cap la Nana Butana.
                 </p>
                 <div class="card mb-3 mx-2" style="width: 18rem;" >
                     <img src="img/nana.png" class="card-img-top" alt="...">
@@ -186,6 +175,23 @@
             </div>
         </div>
 
+        <div class="container mt-4 p-5 d-none" id="pagina_jocs_de_la_pau">
+            <div class="row">
+                <p>
+                    JOCS DE LA PAU
+                </p>
+                <img src="img/columns.png" id="imatgeColumnes" alt="columnes">
+            </div>
+        </div>
+
+        <div class="container mt-4 p-5 d-none" id="pagina_arbre">
+            <div class="row">
+                <p>
+                    ARBRE
+                </p>
+            </div>
+        </div>
+        <img src="img/fons.png" id="imatgeArbre" alt="arbre lila" class="d-none">
 
 
         <div class="container mt-4 p-5 d-none text-center" id="pagina_memory">

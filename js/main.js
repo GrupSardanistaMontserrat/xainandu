@@ -1,291 +1,302 @@
-
 function canviarInici() {
     let inici = document.getElementById("pagina_inici");
-    let historia = document.getElementById("pagina_blau");
-    let vestit = document.getElementById("pagina_groc");
-    //let famosos = document.getElementById("pagina_famosos");
-    let joc = document.getElementById("pagina_vermell");
-    let tresor = document.getElementById("pagina_verd");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
     let memory = document.getElementById("pagina_memory");
 
     inici.style.display = "block";
     inici.classList.remove("d-none");
-    historia.style.display = "none";
-    historia.classList.add("d-none");
-    vestit.style.display = "none";
-    vestit.classList.add("d-none");
-    //famosos.style.display = "none";
-    //famosos.classList.add("d-none");
-    joc.style.display = "none";
-    joc.classList.add("d-none");
-    tresor.style.display = "none";
-    tresor.classList.remove("d-none");
+    blau.style.display = "none";
+    blau.classList.add("d-none");
+    groc.style.display = "none";
+    groc.classList.add("d-none");
+    vermell.style.display = "none";
+    vermell.classList.add("d-none");
+    verd.style.display = "none";
+    verd.classList.add("d-none");
+    jocs.style.display = "none";
+    jocs.classList.add("d-none");
+    arbre.style.display = "none";
+    arbre.classList.add("d-none");
     memory.style.display = "none";
-    memory.classList.remove("d-none");
+    memory.classList.add("d-none");
 
-    let li_inici = document.getElementById("li_inici");
-    let li_historia = document.getElementById("li_historia");
-    let li_vestit = document.getElementById("li_vestit");
-    //let li_famosos = document.getElementById("li_famosos");
-    let li_joc = document.getElementById("li_joc");
-    let li_tresor = document.getElementById("li_tresor");
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
     let li_memory = document.getElementById("li_memory");
 
-    li_inici.classList.remove("text-white");
-    li_inici.classList.add("text-secondary");
-    li_historia.classList.remove("text-secondary");
-    li_historia.classList.add("text-white");
-    li_vestit.classList.remove("text-secondary");
-    li_vestit.classList.add("text-white");
-    //li_famosos.classList.remove("text-secondary");
-    //li_famosos.classList.add("text-white");
-    li_joc.classList.remove("text-secondary");
-    li_joc.classList.add("text-white");
-    li_tresor.classList.remove("text-secondary");
-    li_tresor.classList.add("text-white");
-    li_memory.classList.remove("text-secondary");
-    li_memory.classList.add("text-white");
+    li_jocs.classList.add("text-secondary");
+    li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-secondary");
+    li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
 }
 
 function canviarBlau() {
     let inici = document.getElementById("pagina_inici");
-    let historia = document.getElementById("pagina_blau");
-    let vestit = document.getElementById("pagina_groc");
-    //let famosos = document.getElementById("pagina_famosos");
-    let joc = document.getElementById("pagina_vermell");
-    let tresor = document.getElementById("pagina_verd");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
     let memory = document.getElementById("pagina_memory");
 
     inici.style.display = "none";
     inici.classList.add("d-none");
-    historia.style.display = "block";
-    historia.classList.remove("d-none");
-    vestit.style.display = "none";
-    vestit.classList.add("d-none");
-    //famosos.style.display = "none";
-    //famosos.classList.add("d-none");
-    joc.style.display = "none";
-    joc.classList.add("d-none");
-    tresor.style.display = "none";
-    tresor.classList.remove("d-none");
+    blau.style.display = "block";
+    blau.classList.remove("d-none");
+    groc.style.display = "none";
+    groc.classList.add("d-none");
+    vermell.style.display = "none";
+    vermell.classList.add("d-none");
+    verd.style.display = "none";
+    verd.classList.add("d-none");
+    jocs.style.display = "none";
+    jocs.classList.add("d-none");
+    arbre.style.display = "none";
+    arbre.classList.add("d-none");
     memory.style.display = "none";
-    memory.classList.remove("d-none");
+    memory.classList.add("d-none");
 
-    let li_inici = document.getElementById("li_inici");
-    let li_historia = document.getElementById("li_historia");
-    let li_vestit = document.getElementById("li_vestit");
-    //let li_famosos = document.getElementById("li_famosos");
-    let li_joc = document.getElementById("li_joc");
-    let li_tresor = document.getElementById("li_tresor");
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
     let li_memory = document.getElementById("li_memory");
 
-    li_historia.classList.remove("text-white");
-    li_historia.classList.add("text-secondary");
-    li_inici.classList.remove("text-secondary");
-    li_inici.classList.add("text-white");
-    li_vestit.classList.remove("text-secondary");
-    li_vestit.classList.add("text-white");
-    //li_famosos.classList.remove("text-secondary");
-    //li_famosos.classList.add("text-white");
-    li_joc.classList.remove("text-secondary");
-    li_joc.classList.add("text-white");
-    li_tresor.classList.remove("text-secondary");
-    li_tresor.classList.add("text-white");
-    li_memory.classList.remove("text-secondary");
-    li_memory.classList.add("text-white");
+    li_jocs.classList.add("text-secondary");
+    li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-secondary");
+    li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
 }
 
 function canviarGroc() {
     let inici = document.getElementById("pagina_inici");
-    let historia = document.getElementById("pagina_blau");
-    let vestit = document.getElementById("pagina_groc");
-    //let famosos = document.getElementById("pagina_famosos");
-    let joc = document.getElementById("pagina_vermell");
-    let tresor = document.getElementById("pagina_verd");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
     let memory = document.getElementById("pagina_memory");
 
     inici.style.display = "none";
     inici.classList.add("d-none");
-    historia.style.display = "none";
-    historia.classList.add("d-none");
-    vestit.style.display = "block";
-    vestit.classList.remove("d-none");
-    //famosos.style.display = "none";
-    //famosos.classList.add("d-none");
-    joc.style.display = "none";
-    joc.classList.add("d-none");
-    tresor.style.display = "none";
-    tresor.classList.remove("d-none");
+    blau.style.display = "none";
+    blau.classList.add("d-none");
+    groc.style.display = "block";
+    groc.classList.remove("d-none");
+    vermell.style.display = "none";
+    vermell.classList.add("d-none");
+    verd.style.display = "none";
+    verd.classList.add("d-none");
+    jocs.style.display = "none";
+    jocs.classList.add("d-none");
+    arbre.style.display = "none";
+    arbre.classList.add("d-none");
     memory.style.display = "none";
-    memory.classList.remove("d-none");
+    memory.classList.add("d-none");
 
-    let li_inici = document.getElementById("li_inici");
-    let li_historia = document.getElementById("li_historia");
-    let li_vestit = document.getElementById("li_vestit");
-    //let li_famosos = document.getElementById("li_famosos");
-    let li_joc = document.getElementById("li_joc");
-    let li_tresor = document.getElementById("li_tresor");
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
     let li_memory = document.getElementById("li_memory");
 
-    li_vestit.classList.remove("text-white");
-    li_vestit.classList.add("text-secondary");
-    li_inici.classList.remove("text-secondary");
-    li_inici.classList.add("text-white");
-    li_historia.classList.remove("text-secondary");
-    li_historia.classList.add("text-white");
-    //li_famosos.classList.remove("text-secondary");
-    //li_famosos.classList.add("text-white");
-    li_joc.classList.remove("text-secondary");
-    li_joc.classList.add("text-white");
-    li_tresor.classList.remove("text-secondary");
-    li_tresor.classList.add("text-white");
-    li_memory.classList.remove("text-secondary");
-    li_memory.classList.add("text-white");
-}
-
-function canviarFamosos() {
-    let inici = document.getElementById("pagina_inici");
-    let historia = document.getElementById("pagina_blau");
-    let vestit = document.getElementById("pagina_groc");
-    //let famosos = document.getElementById("pagina_famosos");
-    let joc = document.getElementById("pagina_vermell");
-    let tresor = document.getElementById("pagina_verd");
-    let memory = document.getElementById("pagina_memory");
-
-    inici.style.display = "none";
-    inici.classList.add("d-none");
-    historia.style.display = "none";
-    historia.classList.add("d-none");
-    vestit.style.display = "none";
-    vestit.classList.add("d-none");
-    //famosos.style.display = "block";
-    //famosos.classList.remove("d-none");
-    joc.style.display = "none";
-    joc.classList.add("d-none");
-    tresor.style.display = "none";
-    tresor.classList.remove("d-none");
-    memory.style.display = "none";
-    memory.classList.remove("d-none");
-
-    let li_inici = document.getElementById("li_inici");
-    let li_historia = document.getElementById("li_historia");
-    let li_vestit = document.getElementById("li_vestit");
-    //let li_famosos = document.getElementById("li_famosos");
-    let li_joc = document.getElementById("li_joc");
-    let li_tresor = document.getElementById("li_tresor");
-
-    //li_famosos.classList.remove("text-white");
-    //li_famosos.classList.add("text-secondary");
-    li_inici.classList.remove("text-secondary");
-    li_inici.classList.add("text-white");
-    li_historia.classList.remove("text-secondary");
-    li_historia.classList.add("text-white");
-    li_vestit.classList.remove("text-secondary");
-    li_vestit.classList.add("text-white");
-    li_joc.classList.remove("text-secondary");
-    li_joc.classList.add("text-white");
-    li_tresor.classList.remove("text-secondary");
-    li_tresor.classList.add("text-white");
-    li_memory.classList.remove("text-secondary");
-    li_memory.classList.add("text-white");
+    li_jocs.classList.add("text-secondary");
+    li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-secondary");
+    li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
 }
 
 function canviarVermell() {
     let inici = document.getElementById("pagina_inici");
-    let historia = document.getElementById("pagina_blau");
-    let vestit = document.getElementById("pagina_groc");
-    //let famosos = document.getElementById("pagina_famosos");
-    let joc = document.getElementById("pagina_vermell");
-    let tresor = document.getElementById("pagina_verd");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
     let memory = document.getElementById("pagina_memory");
 
     inici.style.display = "none";
     inici.classList.add("d-none");
-    historia.style.display = "none";
-    historia.classList.add("d-none");
-    vestit.style.display = "none";
-    vestit.classList.add("d-none");
-    //famosos.style.display = "none";
-    //famosos.classList.add("d-none");
-    joc.style.display = "block";
-    joc.classList.remove("d-none");
-    tresor.style.display = "none";
-    tresor.classList.remove("d-none");
+    blau.style.display = "none";
+    blau.classList.add("d-none");
+    groc.style.display = "none";
+    groc.classList.add("d-none");
+    vermell.style.display = "block";
+    vermell.classList.remove("d-none");
+    verd.style.display = "none";
+    verd.classList.add("d-none");
+    jocs.style.display = "none";
+    jocs.classList.add("d-none");
+    arbre.style.display = "none";
+    arbre.classList.add("d-none");
     memory.style.display = "none";
-    memory.classList.remove("d-none");
+    memory.classList.add("d-none");
 
-    let li_inici = document.getElementById("li_inici");
-    let li_historia = document.getElementById("li_historia");
-    let li_vestit = document.getElementById("li_vestit");
-    //let li_famosos = document.getElementById("li_famosos");
-    let li_joc = document.getElementById("li_joc");
-    let li_tresor = document.getElementById("li_tresor");
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
     let li_memory = document.getElementById("li_memory");
 
-    li_joc.classList.remove("text-white");
-    li_joc.classList.add("text-secondary");
-    //li_famosos.classList.remove("text-secondary");
-    //li_famosos.classList.add("text-white");
-    li_inici.classList.remove("text-secondary");
-    li_inici.classList.add("text-white");
-    li_historia.classList.remove("text-secondary");
-    li_historia.classList.add("text-white");
-    li_vestit.classList.remove("text-secondary");
-    li_vestit.classList.add("text-white");
-    li_tresor.classList.remove("text-secondary");
-    li_tresor.classList.add("text-white");
-    li_memory.classList.remove("text-secondary");
-    li_memory.classList.add("text-white");
+    li_jocs.classList.add("text-secondary");
+    li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-secondary");
+    li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
 }
 
 function canviarVerd() 
 {
     let inici = document.getElementById("pagina_inici");
-    let historia = document.getElementById("pagina_blau");
-    let vestit = document.getElementById("pagina_groc");
-    //let famosos = document.getElementById("pagina_famosos");
-    let joc = document.getElementById("pagina_vermell");
-    let tresor = document.getElementById("pagina_verd");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
     let memory = document.getElementById("pagina_memory");
 
     inici.style.display = "none";
     inici.classList.add("d-none");
-    historia.style.display = "none";
-    historia.classList.add("d-none");
-    vestit.style.display = "none";
-    vestit.classList.add("d-none");
-    //famosos.style.display = "none";
-    //famosos.classList.add("d-none");
-    joc.style.display = "none";
-    joc.classList.remove("d-none");
-    tresor.style.display = "block";
-    tresor.classList.remove("d-none");
+    blau.style.display = "none";
+    blau.classList.add("d-none");
+    groc.style.display = "none";
+    groc.classList.add("d-none");
+    vermell.style.display = "none";
+    vermell.classList.add("d-none");
+    verd.style.display = "block";
+    verd.classList.remove("d-none");
+    jocs.style.display = "none";
+    jocs.classList.add("d-none");
+    arbre.style.display = "none";
+    arbre.classList.add("d-none");
     memory.style.display = "none";
-    memory.classList.remove("d-none");
+    memory.classList.add("d-none");
 
-    let li_inici = document.getElementById("li_inici");
-    let li_historia = document.getElementById("li_historia");
-    let li_vestit = document.getElementById("li_vestit");
-    //let li_famosos = document.getElementById("li_famosos");
-    let li_joc = document.getElementById("li_joc");
-    let li_tresor = document.getElementById("li_tresor");
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
     let li_memory = document.getElementById("li_memory");
 
-    li_joc.classList.remove("text-secondary");
-    li_joc.classList.add("text-white");
-    li_tresor.classList.remove("text-white");
-    li_tresor.classList.add("text-secondary");
-    //li_famosos.classList.remove("text-secondary");
-    //li_famosos.classList.add("text-white");
-    li_inici.classList.remove("text-secondary");
-    li_inici.classList.add("text-white");
-    li_historia.classList.remove("text-secondary");
-    li_historia.classList.add("text-white");
-    li_vestit.classList.remove("text-secondary");
-    li_vestit.classList.add("text-white");
-    li_memory.classList.remove("text-secondary");
-    li_memory.classList.add("text-white");
+    li_jocs.classList.add("text-secondary");
+    li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-secondary");
+    li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
 }
+
+function canviarJocsdelaPau() 
+{
+    let inici = document.getElementById("pagina_inici");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
+    let memory = document.getElementById("pagina_memory");
+
+    inici.style.display = "none";
+    inici.classList.add("d-none");
+    blau.style.display = "none";
+    blau.classList.add("d-none");
+    groc.style.display = "none";
+    groc.classList.add("d-none");
+    vermell.style.display = "none";
+    vermell.classList.add("d-none");
+    verd.style.display = "none";
+    verd.classList.add("d-none");
+    jocs.style.display = "block";
+    jocs.classList.remove("d-none");
+    arbre.style.display = "none";
+    arbre.classList.add("d-none");
+    memory.style.display = "none";
+    memory.classList.add("d-none");
+
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
+    let li_memory = document.getElementById("li_memory");
+
+    li_jocs.classList.add("text-white");
+    li_jocs.classList.remove("text-secondary");
+    li_arbre.classList.add("text-secondary");
+    li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
+}
+
+function canviarArbre() 
+{
+    let inici = document.getElementById("pagina_inici");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
+    let memory = document.getElementById("pagina_memory");
+
+    inici.style.display = "none";
+    inici.classList.add("d-none");
+    blau.style.display = "none";
+    blau.classList.add("d-none");
+    groc.style.display = "none";
+    groc.classList.add("d-none");
+    vermell.style.display = "none";
+    vermell.classList.add("d-none");
+    verd.style.display = "none";
+    verd.classList.add("d-none");
+    jocs.style.display = "none";
+    jocs.classList.add("d-none");
+    arbre.style.display = "block";
+    arbre.classList.remove("d-none");
+    memory.style.display = "none";
+    memory.classList.add("d-none");
+
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.remove("d-none");
+
+
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
+    let li_memory = document.getElementById("li_memory");
+
+    li_jocs.classList.add("text-secondary");
+    li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-white");
+    li_arbre.classList.remove("text-secondary");
+    li_memory.classList.add("text-secondary");
+    li_memory.classList.remove("text-white");
+}
+
+
 
 
 
@@ -303,6 +314,9 @@ function mostrarSeccio(seccioId, botoActiuId, seccions, botons) {
         }
     });
 
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
     // Actualitza els estils del menú
     botons.forEach(id => {
         const boto = document.getElementById(id);
@@ -316,15 +330,15 @@ function mostrarSeccio(seccioId, botoActiuId, seccions, botons) {
 function canviarMemory() {
     mostrarSeccio("pagina_memory", "li_memory", 
         ["pagina_inici", "pagina_blau", "pagina_groc", "pagina_vermell", "pagina_verd", "pagina_memory"],
-        ["li_inici", "li_joc", "li_arbre", "li_memory"]
+        ["li_jocs", "li_arbre", "li_memory"]
     );
     iniciarMemory();
 }
 
 let cartesGirades = [];
 let bloquejat = false;
-const imatges = ["img/memory/duo.jpeg", "img/memory/marc.JPG", "img/memory/martini.png", "img/memory/meritxell.jpeg", 
-    "img/memory/mossen.jpg", "img/memory/nana.png", "img/memory/pombeta.png", "img/memory/ramon.png", "img/memory/gsm.png",];
+const imatges = ["img/memory/duo.jpeg", "img/memory/marc.JPG", "img/martini.png", "img/memory/meritxell.jpeg", 
+    "img/memory/mossen.jpg", "img/nana.png", "img/pombeta.png", "img/ramon.png", "img/memory/gsm.png",];
 
 function iniciarMemory() {
     const cartes = [...imatges, ...imatges].sort(() => 0.5 - Math.random());
