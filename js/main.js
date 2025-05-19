@@ -367,7 +367,8 @@ function mostrarSeccio(seccioId, botoActiuId, seccions, botons) {
 let cartesGirades = [];
 let bloquejat = false;
 const imatges = ["img/memory/duo.jpeg", "img/memory/marc.JPG", "img/martini.png", "img/memory/meritxell.jpeg", 
-    "img/memory/mossen.jpg", "img/nana.png", "img/pombeta.png", "img/ramon.png", "img/memory/gsm.png", "img/memory/alba.jpeg",];
+    "img/memory/mossen.jpg", "img/nana.png", "img/pombeta.png", "img/ramon.png", "img/memory/gsm.png", 
+    "img/memory/alba.jpeg", "img/memory/juny.png", "img/memory/triptic.png"];
 
 function iniciarMemory() {
     const cartes = [...imatges, ...imatges].sort(() => 0.5 - Math.random());
