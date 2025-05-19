@@ -302,6 +302,43 @@ function canviarArbre()
 
 
 // JOC MEMORY
+function canviarMemory() {
+    let inici = document.getElementById("pagina_inici");
+    let blau = document.getElementById("pagina_blau");
+    let groc = document.getElementById("pagina_groc");
+    let vermell = document.getElementById("pagina_vermell");
+    let verd = document.getElementById("pagina_verd");
+    let jocs = document.getElementById("pagina_jocs_de_la_pau");
+    let arbre = document.getElementById("pagina_arbre");
+    let memory = document.getElementById("pagina_memory");
+
+    // Oculta totes les seccions
+    inici.style.display = "none"; inici.classList.add("d-none");
+    blau.style.display = "none"; blau.classList.add("d-none");
+    groc.style.display = "none"; groc.classList.add("d-none");
+    vermell.style.display = "none"; vermell.classList.add("d-none");
+    verd.style.display = "none"; verd.classList.add("d-none");
+    jocs.style.display = "none"; jocs.classList.add("d-none");
+    arbre.style.display = "none"; arbre.classList.add("d-none");
+
+    // Mostra només la pàgina del joc de memòria
+    memory.style.display = "block"; memory.classList.remove("d-none");
+
+    // Oculta imatge de fons si cal
+    let imatge_arbre = document.getElementById("imatgeArbre");
+    imatge_arbre.classList.add("d-none");
+
+    // Actualitza menú actiu
+    let li_jocs = document.getElementById("li_jocs");
+    let li_arbre = document.getElementById("li_arbre");
+    let li_memory = document.getElementById("li_memory");
+
+    li_jocs.classList.add("text-secondary"); li_jocs.classList.remove("text-white");
+    li_arbre.classList.add("text-secondary"); li_arbre.classList.remove("text-white");
+    li_memory.classList.add("text-white"); li_memory.classList.remove("text-secondary");
+
+    iniciarMemory();
+}
 
 function mostrarSeccio(seccioId, botoActiuId, seccions, botons) {
     // Mostra només la secció activa
@@ -327,18 +364,10 @@ function mostrarSeccio(seccioId, botoActiuId, seccions, botons) {
     });
 }
 
-function canviarMemory() {
-    mostrarSeccio("pagina_memory", "li_memory", 
-        ["pagina_inici", "pagina_blau", "pagina_groc", "pagina_vermell", "pagina_verd", "pagina_memory"],
-        ["li_jocs", "li_arbre", "li_memory"]
-    );
-    iniciarMemory();
-}
-
 let cartesGirades = [];
 let bloquejat = false;
 const imatges = ["img/memory/duo.jpeg", "img/memory/marc.JPG", "img/martini.png", "img/memory/meritxell.jpeg", 
-    "img/memory/mossen.jpg", "img/nana.png", "img/pombeta.png", "img/ramon.png", "img/memory/gsm.png",];
+    "img/memory/mossen.jpg", "img/nana.png", "img/pombeta.png", "img/ramon.png", "img/memory/gsm.png", "img/memory/alba.jpeg",];
 
 function iniciarMemory() {
     const cartes = [...imatges, ...imatges].sort(() => 0.5 - Math.random());

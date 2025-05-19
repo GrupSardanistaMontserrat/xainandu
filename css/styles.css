@@ -158,3 +158,11 @@ p {
         transform: translate(-50%, -50%);
     }
 }
+
+
+.memory-card img {
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+}
