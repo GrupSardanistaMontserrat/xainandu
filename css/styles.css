@@ -197,15 +197,26 @@ p {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-    #imatgeColumnes {
-        position: absolute; /* o relative, si es vol treure del flux fixat */
-        z-index: -1; /* enviar al fons del tot */
-        opacity: 0.3; /* opcional: fer-la més transparent */
+
+
+
+.imatge_columnes_petita {
+    display: none;
+}
+.imatge_arbre_petita {
+    display: none;
+}
+
+@media (max-width: 1800px) {
+    .imatge_columnes_gran {
+        display: none;
     }
-    #imatgeArbre {
-        position: absolute; /* o relative, si es vol treure del flux fixat */
-        z-index: -1; /* enviar al fons del tot */
-        opacity: 0.3; /* opcional: fer-la més transparent */
+    .imatge_arbre_petita {
+        display: block;
+    }
+    #imatgeColumnes {
+        position: absolute !important; /* o relative, si es vol treure del flux fixat */
+        z-index: -1 !important; /* enviar al fons del tot */
+        opacity: 0.3 !important; /* opcional: fer-la més transparent */
     }
 }
