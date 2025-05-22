@@ -196,3 +196,16 @@ p {
     box-shadow: 0 0 15px rgba(25, 135, 84, 0.5);
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+    #imatgeColumnes {
+        position: absolute; /* o relative, si es vol treure del flux fixat */
+        z-index: -1; /* enviar al fons del tot */
+        opacity: 0.3; /* opcional: fer-la més transparent */
+    }
+    #imatgeArbre {
+        position: absolute; /* o relative, si es vol treure del flux fixat */
+        z-index: -1; /* enviar al fons del tot */
+        opacity: 0.3; /* opcional: fer-la més transparent */
+    }
+}
