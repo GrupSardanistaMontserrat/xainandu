@@ -211,12 +211,15 @@ p {
     .imatge_columnes_gran {
         display: none;
     }
-    .imatge_arbre_petita {
+    .imatge_columnes_petita {
         display: block;
     }
-    #imatgeColumnes {
-        position: absolute !important; /* o relative, si es vol treure del flux fixat */
-        z-index: -1 !important; /* enviar al fons del tot */
-        opacity: 0.3 !important; /* opcional: fer-la més transparent */
+}
+
+@media (max-width: 768px) {
+    #menu {
+        justify-content: center !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
