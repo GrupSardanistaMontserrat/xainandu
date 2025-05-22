@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rosarivo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 body, html {
     margin: 0;
@@ -170,4 +170,29 @@ p {
     height: auto;
     max-height: 80px;
     object-fit: contain;
+}
+
+
+.faccio-blau:hover {
+    border: 3px solid #0d6efd; /* Blau Bootstrap */
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+    transition: all 0.3s ease;
+}
+
+.faccio-groc:hover {
+    border: 3px solid #ffc107; /* Grog Bootstrap */
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+    transition: all 0.3s ease;
+}
+
+.faccio-vermell:hover {
+    border: 3px solid #dc3545; /* Vermell Bootstrap */
+    box-shadow: 0 0 15px rgba(220, 53, 69, 0.5);
+    transition: all 0.3s ease;
+}
+
+.faccio-verd:hover {
+    border: 3px solid #198754; /* Verd Bootstrap */
+    box-shadow: 0 0 15px rgba(25, 135, 84, 0.5);
+    transition: all 0.3s ease;
 }
